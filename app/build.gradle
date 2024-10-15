@@ -26,6 +26,9 @@ android {
             }
         }
     }
+    
+    val baseAppName "Daedric.NET NTFY"
+    
 
     buildTypes {
         release {
