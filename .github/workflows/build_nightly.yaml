@@ -43,7 +43,7 @@ jobs:
         with:
           name: elementx-app-gplay-bundle-unsigned
           path: |
-            app/build/outputs/apk/gplay/nightly/*
+            app/build/outputs/*
 
 #      - name: Send to Matrix
 #        uses: daedric7/Matrix-Send-File@v0.2-beta6
