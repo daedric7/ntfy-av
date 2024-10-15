@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.work.*
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
-import io.heckel.ntfy.R
+import net.daedric.ntfy.R
 import io.heckel.ntfy.app.Application
 import io.heckel.ntfy.db.Attachment
 import io.heckel.ntfy.db.Icon
