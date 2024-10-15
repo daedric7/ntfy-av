@@ -1,4 +1,4 @@
-package io.heckel.ntfy.msg
+package net.daedric.ntfy.msg
 
 import android.content.Context
 import android.net.Uri
@@ -9,12 +9,12 @@ import android.widget.Toast
 import androidx.core.content.FileProvider
 import androidx.work.Worker
 import androidx.work.WorkerParameters
-import io.heckel.ntfy.BuildConfig
-import io.heckel.ntfy.R
-import io.heckel.ntfy.app.Application
-import io.heckel.ntfy.db.*
-import io.heckel.ntfy.util.Log
-import io.heckel.ntfy.util.ensureSafeNewFile
+import net.daedric.ntfy.BuildConfig
+import net.daedric.ntfy.R
+import net.daedric.ntfy.app.Application
+import net.daedric.ntfy.db.*
+import net.daedric.ntfy.util.Log
+import net.daedric.ntfy.util.ensureSafeNewFile
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.Response

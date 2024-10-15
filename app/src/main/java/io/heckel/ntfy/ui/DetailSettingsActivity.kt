@@ -1,4 +1,4 @@
-package io.heckel.ntfy.ui
+package net.daedric.ntfy.ui
 
 import android.content.ContentResolver
 import android.content.ClipData
@@ -18,14 +18,14 @@ import androidx.core.graphics.drawable.toDrawable
 import androidx.lifecycle.lifecycleScope
 import androidx.preference.*
 import androidx.preference.Preference.OnPreferenceClickListener
-import io.heckel.ntfy.BuildConfig
-import io.heckel.ntfy.R
-import io.heckel.ntfy.db.Repository
-import io.heckel.ntfy.db.Subscription
-import io.heckel.ntfy.msg.DownloadAttachmentWorker
-import io.heckel.ntfy.msg.NotificationService
-import io.heckel.ntfy.service.SubscriberServiceManager
-import io.heckel.ntfy.util.*
+import net.daedric.ntfy.BuildConfig
+import net.daedric.ntfy.R
+import net.daedric.ntfy.db.Repository
+import net.daedric.ntfy.db.Subscription
+import net.daedric.ntfy.msg.DownloadAttachmentWorker
+import net.daedric.ntfy.msg.NotificationService
+import net.daedric.ntfy.service.SubscriberServiceManager
+import net.daedric.ntfy.util.*
 import kotlinx.coroutines.*
 import java.io.File
 import java.io.IOException

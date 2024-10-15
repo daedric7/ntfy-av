@@ -1,4 +1,4 @@
-package io.heckel.ntfy.service
+package net.daedric.ntfy.service
 
 interface Connection {
     fun start()

@@ -1,4 +1,4 @@
-package io.heckel.ntfy.db
+package net.daedric.ntfy.db
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -7,8 +7,8 @@ import android.os.Build
 import androidx.annotation.WorkerThread
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.*
-import io.heckel.ntfy.util.Log
-import io.heckel.ntfy.util.validUrl
+import net.daedric.ntfy.util.Log
+import net.daedric.ntfy.util.validUrl
 import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.atomic.AtomicLong
 

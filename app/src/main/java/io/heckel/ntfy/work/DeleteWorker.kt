@@ -1,17 +1,17 @@
-package io.heckel.ntfy.work
+package net.daedric.ntfy.work
 
 import android.content.Context
 import android.net.Uri
 import androidx.core.content.FileProvider
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import io.heckel.ntfy.BuildConfig
-import io.heckel.ntfy.db.ATTACHMENT_PROGRESS_DELETED
-import io.heckel.ntfy.db.Repository
-import io.heckel.ntfy.msg.DownloadIconWorker
-import io.heckel.ntfy.util.Log
-import io.heckel.ntfy.util.maybeFileStat
-import io.heckel.ntfy.util.topicShortUrl
+import net.daedric.ntfy.BuildConfig
+import net.daedric.ntfy.db.ATTACHMENT_PROGRESS_DELETED
+import net.daedric.ntfy.db.Repository
+import net.daedric.ntfy.msg.DownloadIconWorker
+import net.daedric.ntfy.util.Log
+import net.daedric.ntfy.util.maybeFileStat
+import net.daedric.ntfy.util.topicShortUrl
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.File

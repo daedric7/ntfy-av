@@ -1,15 +1,15 @@
-package io.heckel.ntfy.service
+package net.daedric.ntfy.service
 
 import android.app.AlarmManager
 import android.os.Build
 import android.os.Handler
 import android.os.Looper
-import io.heckel.ntfy.db.*
-import io.heckel.ntfy.msg.ApiService.Companion.requestBuilder
-import io.heckel.ntfy.msg.NotificationParser
-import io.heckel.ntfy.util.Log
-import io.heckel.ntfy.util.topicShortUrl
-import io.heckel.ntfy.util.topicUrlWs
+import net.daedric.ntfy.db.*
+import net.daedric.ntfy.msg.ApiService.Companion.requestBuilder
+import net.daedric.ntfy.msg.NotificationParser
+import net.daedric.ntfy.util.Log
+import net.daedric.ntfy.util.topicShortUrl
+import net.daedric.ntfy.util.topicUrlWs
 import okhttp3.OkHttpClient
 import okhttp3.Response
 import okhttp3.WebSocket

@@ -1,4 +1,4 @@
-package io.heckel.ntfy.ui
+package net.daedric.ntfy.ui
 
 import android.app.AlertDialog
 import android.app.Dialog
@@ -7,8 +7,8 @@ import android.os.Bundle
 import android.widget.RadioButton
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.lifecycleScope
-import io.heckel.ntfy.R
-import io.heckel.ntfy.db.Repository
+import net.daedric.ntfy.R
+import net.daedric.ntfy.db.Repository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

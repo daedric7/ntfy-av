@@ -1,4 +1,4 @@
-package io.heckel.ntfy.ui
+package net.daedric.ntfy.ui
 
 import android.app.AlertDialog
 import android.content.ClipData
@@ -24,18 +24,18 @@ import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.android.material.snackbar.Snackbar
-import io.heckel.ntfy.BuildConfig
-import io.heckel.ntfy.R
-import io.heckel.ntfy.app.Application
-import io.heckel.ntfy.db.Notification
-import io.heckel.ntfy.db.Repository
-import io.heckel.ntfy.db.Subscription
-import io.heckel.ntfy.firebase.FirebaseMessenger
-import io.heckel.ntfy.util.Log
-import io.heckel.ntfy.msg.ApiService
-import io.heckel.ntfy.msg.NotificationService
-import io.heckel.ntfy.service.SubscriberServiceManager
-import io.heckel.ntfy.util.*
+import net.daedric.ntfy.BuildConfig
+import net.daedric.ntfy.R
+import net.daedric.ntfy.app.Application
+import net.daedric.ntfy.db.Notification
+import net.daedric.ntfy.db.Repository
+import net.daedric.ntfy.db.Subscription
+import net.daedric.ntfy.firebase.FirebaseMessenger
+import net.daedric.ntfy.util.Log
+import net.daedric.ntfy.msg.ApiService
+import net.daedric.ntfy.msg.NotificationService
+import net.daedric.ntfy.service.SubscriberServiceManager
+import net.daedric.ntfy.util.*
 import kotlinx.coroutines.*
 import java.util.*
 import kotlin.random.Random

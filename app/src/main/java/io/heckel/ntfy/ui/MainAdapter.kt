@@ -1,4 +1,4 @@
-package io.heckel.ntfy.ui
+package net.daedric.ntfy.ui
 
 import android.content.Context
 import android.graphics.Color
@@ -10,13 +10,13 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import io.heckel.ntfy.BuildConfig
-import io.heckel.ntfy.R
-import io.heckel.ntfy.db.ConnectionState
-import io.heckel.ntfy.db.Repository
-import io.heckel.ntfy.db.Subscription
-import io.heckel.ntfy.util.displayName
-import io.heckel.ntfy.util.readBitmapFromUriOrNull
+import net.daedric.ntfy.BuildConfig
+import net.daedric.ntfy.R
+import net.daedric.ntfy.db.ConnectionState
+import net.daedric.ntfy.db.Repository
+import net.daedric.ntfy.db.Subscription
+import net.daedric.ntfy.util.displayName
+import net.daedric.ntfy.util.readBitmapFromUriOrNull
 import java.text.DateFormat
 import java.util.*
 

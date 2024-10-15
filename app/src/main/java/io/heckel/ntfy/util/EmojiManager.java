@@ -1,4 +1,4 @@
-package io.heckel.ntfy.util;
+package net.daedric.ntfy.util;
 
 import java.io.InputStream;
 import java.util.HashMap;

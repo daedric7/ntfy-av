@@ -1,4 +1,4 @@
-package io.heckel.ntfy.ui
+package net.daedric.ntfy.ui
 
 import android.Manifest
 import android.app.Activity
@@ -25,14 +25,14 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
 import com.stfalcon.imageviewer.StfalconImageViewer
-import io.heckel.ntfy.R
-import io.heckel.ntfy.db.*
-import io.heckel.ntfy.msg.DownloadAttachmentWorker
-import io.heckel.ntfy.msg.DownloadManager
-import io.heckel.ntfy.msg.DownloadType
-import io.heckel.ntfy.msg.NotificationService
-import io.heckel.ntfy.msg.NotificationService.Companion.ACTION_VIEW
-import io.heckel.ntfy.util.*
+import net.daedric.ntfy.R
+import net.daedric.ntfy.db.*
+import net.daedric.ntfy.msg.DownloadAttachmentWorker
+import net.daedric.ntfy.msg.DownloadManager
+import net.daedric.ntfy.msg.DownloadType
+import net.daedric.ntfy.msg.NotificationService
+import net.daedric.ntfy.msg.NotificationService.Companion.ACTION_VIEW
+import net.daedric.ntfy.util.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

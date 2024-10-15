@@ -1,4 +1,4 @@
-package io.heckel.ntfy.firebase
+package net.daedric.ntfy.firebase
 
 import android.app.Service
 import android.content.Intent

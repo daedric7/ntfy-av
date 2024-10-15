@@ -1,4 +1,4 @@
-package io.heckel.ntfy.ui
+package net.daedric.ntfy.ui
 
 import android.Manifest
 import android.app.AlertDialog
@@ -24,13 +24,13 @@ import androidx.lifecycle.lifecycleScope
 import androidx.preference.*
 import androidx.preference.Preference.OnPreferenceClickListener
 import com.google.gson.Gson
-import io.heckel.ntfy.BuildConfig
-import io.heckel.ntfy.R
-import io.heckel.ntfy.backup.Backuper
-import io.heckel.ntfy.db.Repository
-import io.heckel.ntfy.db.User
-import io.heckel.ntfy.service.SubscriberServiceManager
-import io.heckel.ntfy.util.*
+import net.daedric.ntfy.BuildConfig
+import net.daedric.ntfy.R
+import net.daedric.ntfy.backup.Backuper
+import net.daedric.ntfy.db.Repository
+import net.daedric.ntfy.db.User
+import net.daedric.ntfy.service.SubscriberServiceManager
+import net.daedric.ntfy.util.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import okhttp3.OkHttpClient

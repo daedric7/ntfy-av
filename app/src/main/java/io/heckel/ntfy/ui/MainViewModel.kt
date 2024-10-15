@@ -1,4 +1,4 @@
-package io.heckel.ntfy.ui
+package net.daedric.ntfy.ui
 
 import android.content.Context
 import android.net.Uri
@@ -6,8 +6,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
-import io.heckel.ntfy.db.*
-import io.heckel.ntfy.up.Distributor
+import net.daedric.ntfy.db.*
+import net.daedric.ntfy.up.Distributor
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

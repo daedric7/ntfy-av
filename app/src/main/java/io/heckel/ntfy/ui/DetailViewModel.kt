@@ -1,11 +1,11 @@
-package io.heckel.ntfy.ui
+package net.daedric.ntfy.ui
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
-import io.heckel.ntfy.db.Notification
-import io.heckel.ntfy.db.Repository
+import net.daedric.ntfy.db.Notification
+import net.daedric.ntfy.db.Repository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

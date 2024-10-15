@@ -1,9 +1,9 @@
-package io.heckel.ntfy.service
+package net.daedric.ntfy.service
 
-import io.heckel.ntfy.db.*
-import io.heckel.ntfy.util.Log
-import io.heckel.ntfy.msg.ApiService
-import io.heckel.ntfy.util.topicUrl
+import net.daedric.ntfy.db.*
+import net.daedric.ntfy.util.Log
+import net.daedric.ntfy.msg.ApiService
+import net.daedric.ntfy.util.topicUrl
 import kotlinx.coroutines.*
 import okhttp3.Call
 import java.util.concurrent.atomic.AtomicBoolean

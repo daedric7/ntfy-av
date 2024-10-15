@@ -1,13 +1,13 @@
-package io.heckel.ntfy.up
+package net.daedric.ntfy.up
 
 import android.content.Context
 import android.content.Intent
-import io.heckel.ntfy.R
-import io.heckel.ntfy.app.Application
-import io.heckel.ntfy.db.Repository
-import io.heckel.ntfy.db.Subscription
-import io.heckel.ntfy.service.SubscriberServiceManager
-import io.heckel.ntfy.util.*
+import net.daedric.ntfy.R
+import net.daedric.ntfy.app.Application
+import net.daedric.ntfy.db.Repository
+import net.daedric.ntfy.db.Subscription
+import net.daedric.ntfy.service.SubscriberServiceManager
+import net.daedric.ntfy.util.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

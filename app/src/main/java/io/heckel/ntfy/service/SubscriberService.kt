@@ -1,4 +1,4 @@
-package io.heckel.ntfy.service
+package net.daedric.ntfy.service
 
 import android.app.*
 import android.content.BroadcastReceiver
@@ -10,18 +10,18 @@ import android.os.PowerManager
 import android.os.SystemClock
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
-import io.heckel.ntfy.BuildConfig
-import io.heckel.ntfy.R
-import io.heckel.ntfy.app.Application
-import io.heckel.ntfy.db.ConnectionState
-import io.heckel.ntfy.db.Repository
-import io.heckel.ntfy.db.Subscription
-import io.heckel.ntfy.msg.ApiService
-import io.heckel.ntfy.msg.NotificationDispatcher
-import io.heckel.ntfy.ui.Colors
-import io.heckel.ntfy.ui.MainActivity
-import io.heckel.ntfy.util.Log
-import io.heckel.ntfy.util.topicUrl
+import net.daedric.ntfy.BuildConfig
+import net.daedric.ntfy.R
+import net.daedric.ntfy.app.Application
+import net.daedric.ntfy.db.ConnectionState
+import net.daedric.ntfy.db.Repository
+import net.daedric.ntfy.db.Subscription
+import net.daedric.ntfy.msg.ApiService
+import net.daedric.ntfy.msg.NotificationDispatcher
+import net.daedric.ntfy.ui.Colors
+import net.daedric.ntfy.ui.MainActivity
+import net.daedric.ntfy.util.Log
+import net.daedric.ntfy.util.topicUrl
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -251,7 +251,7 @@ class SubscriberService : Service() {
         repository.updateState(subscriptionIds, state)
     }
 
-    private fun onNotificationReceived(subscription: Subscription, notification: io.heckel.ntfy.db.Notification) {
+    private fun onNotificationReceived(subscription: Subscription, notification: net.daedric.ntfy.db.Notification) {
         // Wakelock while notifications are being dispatched
         // Wakelocks are reference counted by default so that should work neatly here
         wakeLock?.acquire(NOTIFICATION_RECEIVED_WAKELOCK_TIMEOUT_MILLIS)
@@ -353,7 +353,7 @@ class SubscriberService : Service() {
 
         private const val WAKE_LOCK_TAG = "SubscriberService:lock"
         private const val NOTIFICATION_CHANNEL_ID = "ntfy-subscriber"
-        private const val NOTIFICATION_GROUP_ID = "io.heckel.ntfy.NOTIFICATION_GROUP_SERVICE"
+        private const val NOTIFICATION_GROUP_ID = "net.daedric.ntfy.NOTIFICATION_GROUP_SERVICE"
         private const val NOTIFICATION_SERVICE_ID = 2586
         private const val NOTIFICATION_RECEIVED_WAKELOCK_TIMEOUT_MILLIS = 10*60*1000L /*10 minutes*/
         private const val SHARED_PREFS_ID = "SubscriberService"

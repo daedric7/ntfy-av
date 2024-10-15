@@ -1,8 +1,8 @@
-package io.heckel.ntfy.app
+package net.daedric.ntfy.app
 
 import android.app.Application
-import io.heckel.ntfy.db.Repository
-import io.heckel.ntfy.util.Log
+import net.daedric.ntfy.db.Repository
+import net.daedric.ntfy.util.Log
 
 class Application : Application() {
     val repository by lazy {

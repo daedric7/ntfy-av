@@ -1,4 +1,4 @@
-package io.heckel.ntfy.ui
+package net.daedric.ntfy.ui
 
 import android.app.Activity
 import android.app.AlertDialog
@@ -13,12 +13,12 @@ import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
-import io.heckel.ntfy.BuildConfig
-import io.heckel.ntfy.R
-import io.heckel.ntfy.db.Repository
-import io.heckel.ntfy.db.User
-import io.heckel.ntfy.msg.ApiService
-import io.heckel.ntfy.util.*
+import net.daedric.ntfy.BuildConfig
+import net.daedric.ntfy.R
+import net.daedric.ntfy.db.Repository
+import net.daedric.ntfy.db.User
+import net.daedric.ntfy.msg.ApiService
+import net.daedric.ntfy.util.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

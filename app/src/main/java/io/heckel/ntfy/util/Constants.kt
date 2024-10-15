@@ -1,4 +1,4 @@
-package io.heckel.ntfy.util
+package net.daedric.ntfy.util
 
 const val ANDROID_APP_MIME_TYPE = "application/vnd.android.package-archive"
 

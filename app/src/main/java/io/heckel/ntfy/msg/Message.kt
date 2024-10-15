@@ -1,4 +1,4 @@
-package io.heckel.ntfy.msg
+package net.daedric.ntfy.msg
 
 import androidx.annotation.Keep
 

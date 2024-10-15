@@ -1,4 +1,4 @@
-package io.heckel.ntfy.util
+package net.daedric.ntfy.util
 
 import android.animation.ArgbEvaluator
 import android.animation.ValueAnimator
@@ -27,11 +27,11 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat
-import io.heckel.ntfy.BuildConfig
-import io.heckel.ntfy.R
-import io.heckel.ntfy.db.*
-import io.heckel.ntfy.msg.MESSAGE_ENCODING_BASE64
-import io.heckel.ntfy.ui.Colors
+import net.daedric.ntfy.BuildConfig
+import net.daedric.ntfy.R
+import net.daedric.ntfy.db.*
+import net.daedric.ntfy.msg.MESSAGE_ENCODING_BASE64
+import net.daedric.ntfy.ui.Colors
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -248,7 +248,7 @@ fun fileStat(context: Context, contentUri: Uri?): FileInfo {
         }
         val size = c.getLong(sizeIndex)
         if (size == 0L) {
-            // Content provider URIs (e.g. content://io.heckel.ntfy.provider/cache_files/DQ4o7DitZAmw) return an entry, even
+            // Content provider URIs (e.g. content://net.daedric.ntfy.provider/cache_files/DQ4o7DitZAmw) return an entry, even
             // when they do not exist, but with an empty size. This is a practical/fast way to weed out non-existing files.
             throw FileNotFoundException("Not found or empty: $contentUri")
         }

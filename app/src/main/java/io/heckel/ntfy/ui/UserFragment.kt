@@ -1,4 +1,4 @@
-package io.heckel.ntfy.ui
+package net.daedric.ntfy.ui
 
 import android.app.AlertDialog
 import android.app.Dialog
@@ -10,11 +10,11 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.DialogFragment
 import com.google.android.material.textfield.TextInputEditText
-import io.heckel.ntfy.R
-import io.heckel.ntfy.db.User
-import io.heckel.ntfy.util.AfterChangedTextWatcher
-import io.heckel.ntfy.util.dangerButton
-import io.heckel.ntfy.util.validUrl
+import net.daedric.ntfy.R
+import net.daedric.ntfy.db.User
+import net.daedric.ntfy.util.AfterChangedTextWatcher
+import net.daedric.ntfy.util.dangerButton
+import net.daedric.ntfy.util.validUrl
 
 class UserFragment : DialogFragment() {
     private var user: User? = null

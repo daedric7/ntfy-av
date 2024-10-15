@@ -1,9 +1,9 @@
-package io.heckel.ntfy.ui
+package net.daedric.ntfy.ui
 
 import android.content.Context
 import androidx.core.content.ContextCompat
-import io.heckel.ntfy.R
-import io.heckel.ntfy.util.isDarkThemeOn
+import net.daedric.ntfy.R
+import net.daedric.ntfy.util.isDarkThemeOn
 
 class Colors {
     companion object {

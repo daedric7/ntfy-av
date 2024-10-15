@@ -1,13 +1,13 @@
-package io.heckel.ntfy.msg
+package net.daedric.ntfy.msg
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import io.heckel.ntfy.db.Action
-import io.heckel.ntfy.db.Attachment
-import io.heckel.ntfy.db.Icon
-import io.heckel.ntfy.db.Notification
-import io.heckel.ntfy.util.joinTags
-import io.heckel.ntfy.util.toPriority
+import net.daedric.ntfy.db.Action
+import net.daedric.ntfy.db.Attachment
+import net.daedric.ntfy.db.Icon
+import net.daedric.ntfy.db.Notification
+import net.daedric.ntfy.util.joinTags
+import net.daedric.ntfy.util.toPriority
 import java.lang.reflect.Type
 
 class NotificationParser {

@@ -1,4 +1,4 @@
-package io.heckel.ntfy.db
+package net.daedric.ntfy.db
 
 import android.content.Context
 import androidx.room.*

@@ -1,4 +1,4 @@
-package io.heckel.ntfy.ui
+package net.daedric.ntfy.ui
 
 import android.content.Intent
 import android.net.Uri
@@ -12,10 +12,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.textfield.TextInputLayout
-import io.heckel.ntfy.R
-import io.heckel.ntfy.app.Application
-import io.heckel.ntfy.msg.ApiService
-import io.heckel.ntfy.util.*
+import net.daedric.ntfy.R
+import net.daedric.ntfy.app.Application
+import net.daedric.ntfy.msg.ApiService
+import net.daedric.ntfy.util.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

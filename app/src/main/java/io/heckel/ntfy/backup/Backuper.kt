@@ -1,17 +1,17 @@
-package io.heckel.ntfy.backup
+package net.daedric.ntfy.backup
 
 import android.content.Context
 import android.net.Uri
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.stream.JsonReader
-import io.heckel.ntfy.R
-import io.heckel.ntfy.app.Application
-import io.heckel.ntfy.db.Repository
-import io.heckel.ntfy.firebase.FirebaseMessenger
-import io.heckel.ntfy.msg.NotificationService
-import io.heckel.ntfy.util.Log
-import io.heckel.ntfy.util.topicUrl
+import net.daedric.ntfy.R
+import net.daedric.ntfy.app.Application
+import net.daedric.ntfy.db.Repository
+import net.daedric.ntfy.firebase.FirebaseMessenger
+import net.daedric.ntfy.msg.NotificationService
+import net.daedric.ntfy.util.Log
+import net.daedric.ntfy.util.topicUrl
 import java.io.InputStreamReader
 
 class Backuper(val context: Context) {
@@ -96,7 +96,7 @@ class Backuper(val context: Context) {
         subscriptions.forEach { s ->
             try {
                 // Add to database
-                val subscription = io.heckel.ntfy.db.Subscription(
+                val subscription = net.daedric.ntfy.db.Subscription(
                     id = s.id,
                     baseUrl = s.baseUrl,
                     topic = s.topic,
@@ -138,7 +138,7 @@ class Backuper(val context: Context) {
             try {
                 val actions = if (n.actions != null) {
                     n.actions.map { a ->
-                        io.heckel.ntfy.db.Action(
+                        net.daedric.ntfy.db.Action(
                             id = a.id,
                             action = a.action,
                             label = a.label,
@@ -157,7 +157,7 @@ class Backuper(val context: Context) {
                     null
                 }
                 val attachment = if (n.attachment != null) {
-                    io.heckel.ntfy.db.Attachment(
+                    net.daedric.ntfy.db.Attachment(
                         name = n.attachment.name,
                         type = n.attachment.type,
                         size = n.attachment.size,
@@ -170,14 +170,14 @@ class Backuper(val context: Context) {
                     null
                 }
                 val icon = if (n.icon != null) {
-                    io.heckel.ntfy.db.Icon(
+                    net.daedric.ntfy.db.Icon(
                         url = n.icon.url,
                         contentUri = n.icon.contentUri,
                     )
                 } else {
                     null
                 }
-                repository.addNotification(io.heckel.ntfy.db.Notification(
+                repository.addNotification(net.daedric.ntfy.db.Notification(
                     id = n.id,
                     subscriptionId = n.subscriptionId,
                     timestamp = n.timestamp,
@@ -205,7 +205,7 @@ class Backuper(val context: Context) {
         }
         users.forEach { u ->
             try {
-                repository.addUser(io.heckel.ntfy.db.User(
+                repository.addUser(net.daedric.ntfy.db.User(
                     baseUrl = u.baseUrl,
                     username = u.username,
                     password = u.password

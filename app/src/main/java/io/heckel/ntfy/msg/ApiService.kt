@@ -1,10 +1,10 @@
-package io.heckel.ntfy.msg
+package net.daedric.ntfy.msg
 
 import android.os.Build
-import io.heckel.ntfy.BuildConfig
-import io.heckel.ntfy.db.Notification
-import io.heckel.ntfy.db.User
-import io.heckel.ntfy.util.*
+import net.daedric.ntfy.BuildConfig
+import net.daedric.ntfy.db.Notification
+import net.daedric.ntfy.db.User
+import net.daedric.ntfy.util.*
 import okhttp3.*
 import okhttp3.RequestBody.Companion.toRequestBody
 import java.io.IOException

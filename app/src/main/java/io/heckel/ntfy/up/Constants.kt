@@ -1,4 +1,4 @@
-package io.heckel.ntfy.up
+package net.daedric.ntfy.up
 
 /**
  * Constants as defined on the specs

@@ -1,11 +1,11 @@
-package io.heckel.ntfy.ui
+package net.daedric.ntfy.ui
 
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import com.google.android.material.textfield.TextInputLayout
-import io.heckel.ntfy.R
+import net.daedric.ntfy.R
 
 fun initBaseUrlDropdown(baseUrls: List<String>, textView: AutoCompleteTextView, layout: TextInputLayout) {
     // Base URL dropdown behavior; Oh my, why is this so complicated?!

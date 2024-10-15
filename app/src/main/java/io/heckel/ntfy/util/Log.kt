@@ -1,12 +1,12 @@
-package io.heckel.ntfy.util
+package net.daedric.ntfy.util
 
 import android.content.Context
 import android.os.Build
-import io.heckel.ntfy.BuildConfig
-import io.heckel.ntfy.backup.Backuper
-import io.heckel.ntfy.db.Database
-import io.heckel.ntfy.db.LogDao
-import io.heckel.ntfy.db.LogEntry
+import net.daedric.ntfy.BuildConfig
+import net.daedric.ntfy.backup.Backuper
+import net.daedric.ntfy.db.Database
+import net.daedric.ntfy.db.LogDao
+import net.daedric.ntfy.db.LogEntry
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

@@ -1,13 +1,13 @@
-package io.heckel.ntfy.msg
+package net.daedric.ntfy.msg
 
 import android.content.Context
-import io.heckel.ntfy.db.Notification
-import io.heckel.ntfy.db.Repository
-import io.heckel.ntfy.db.Subscription
-import io.heckel.ntfy.util.Log
-import io.heckel.ntfy.up.Distributor
-import io.heckel.ntfy.util.decodeBytesMessage
-import io.heckel.ntfy.util.safeLet
+import net.daedric.ntfy.db.Notification
+import net.daedric.ntfy.db.Repository
+import net.daedric.ntfy.db.Subscription
+import net.daedric.ntfy.util.Log
+import net.daedric.ntfy.up.Distributor
+import net.daedric.ntfy.util.decodeBytesMessage
+import net.daedric.ntfy.util.safeLet
 
 /**
  * The notification dispatcher figures out what to do with a notification.

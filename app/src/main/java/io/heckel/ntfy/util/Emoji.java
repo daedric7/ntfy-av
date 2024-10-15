@@ -1,4 +1,4 @@
-package io.heckel.ntfy.util;
+package net.daedric.ntfy.util;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Collections;

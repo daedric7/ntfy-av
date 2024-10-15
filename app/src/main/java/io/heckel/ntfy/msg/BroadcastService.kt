@@ -1,13 +1,13 @@
-package io.heckel.ntfy.msg
+package net.daedric.ntfy.msg
 
 import android.content.Context
 import android.content.Intent
-import io.heckel.ntfy.R
-import io.heckel.ntfy.db.Action
-import io.heckel.ntfy.db.Notification
-import io.heckel.ntfy.db.Repository
-import io.heckel.ntfy.db.Subscription
-import io.heckel.ntfy.util.*
+import net.daedric.ntfy.R
+import net.daedric.ntfy.db.Action
+import net.daedric.ntfy.db.Notification
+import net.daedric.ntfy.db.Repository
+import net.daedric.ntfy.db.Subscription
+import net.daedric.ntfy.util.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -123,8 +123,8 @@ class BroadcastService(private val ctx: Context) {
         private const val DOES_NOT_EXIST = -2586000
 
         // These constants cannot be changed without breaking the contract; also see manifest
-        private const val MESSAGE_RECEIVED_ACTION = "io.heckel.ntfy.MESSAGE_RECEIVED"
-        private const val MESSAGE_SEND_ACTION = "io.heckel.ntfy.SEND_MESSAGE"
-        private const val USER_ACTION_ACTION = "io.heckel.ntfy.USER_ACTION"
+        private const val MESSAGE_RECEIVED_ACTION = "net.daedric.ntfy.MESSAGE_RECEIVED"
+        private const val MESSAGE_SEND_ACTION = "net.daedric.ntfy.SEND_MESSAGE"
+        private const val USER_ACTION_ACTION = "net.daedric.ntfy.USER_ACTION"
     }
 }

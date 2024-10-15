@@ -1,11 +1,11 @@
-package io.heckel.ntfy.service
+package net.daedric.ntfy.service
 
 import android.content.Context
 import android.content.Intent
 import androidx.core.content.ContextCompat
 import androidx.work.*
-import io.heckel.ntfy.app.Application
-import io.heckel.ntfy.util.Log
+import net.daedric.ntfy.app.Application
+import net.daedric.ntfy.util.Log
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
