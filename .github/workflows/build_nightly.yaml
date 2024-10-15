@@ -37,13 +37,13 @@ jobs:
           ELEMENT_ANDROID_MAPTILER_DARK_MAP_ID: 'streets-v2-dark'
           ELEMENT_ANDROID_NIGHTLY_KEYPASSWORD: '12345678'
           ELEMENT_ANDROID_NIGHTLY_STOREPASSWORD: '12345678'
-        run: ./gradlew assemblePlayRelease $CI_GRADLE_ARG_PROPERTIES
+        run: ./gradlew assemblePlayDebug $CI_GRADLE_ARG_PROPERTIES
       - name: Upload bundle as artifact
         uses: actions/upload-artifact@v4
         with:
           name: ntfy-daedric-net
           path: |
-            app/build/outputs/apk/play/release/*.apk
+            app/build/outputs/apk/play/debug/*.apk
 
 #      - name: Send to Matrix
 #        uses: daedric7/Matrix-Send-File@v0.2-beta6
