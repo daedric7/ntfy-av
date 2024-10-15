@@ -34,12 +34,10 @@ android {
             minifyEnabled true
             debuggable false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            manifestPlaceholders = [appName: "DaedricNET NTFY"]
         }
         debug {
             minifyEnabled false
             debuggable true
-             manifestPlaceholders = [appName: "DaedricNET NTFY Debug"]
         }
     }
 
