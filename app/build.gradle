@@ -84,7 +84,7 @@ android {
                     "1:912726360885:android:e17435e0beb0303000427c"
                 }
             }
-        
+        }
     }
 
     flavorDimensions "store"
