@@ -29,9 +29,9 @@ android {
     // Add signingConfigs block here
     signingConfigs {
         release {
-            keyAlias 'androidnightlykey'         // Alias of the key in the keystore
+            keyAlias 'ntfykey'         // Alias of the key in the keystore
             keyPassword '12345678'   // Password for the key
-            storeFile file("./signature/nightly.keystore")  // Keystore file path
+            storeFile file("./signature/ntfy.keystore")  // Keystore file path
             storePassword '12345678'  // Keystore password
         }
     }    
