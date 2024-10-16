@@ -43,7 +43,7 @@ jobs:
         with:
           name: ntfy-daedric-net
           path: |
-            app/build/outputs/apk/play/debug/*.apk
+            app/build/outputs/*
 
 #      - name: Send to Matrix
 #        uses: daedric7/Matrix-Send-File@v0.2-beta6
