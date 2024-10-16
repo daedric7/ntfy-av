@@ -30,9 +30,9 @@ android {
     signingConfigs {
         release {
             keyAlias 'nightly'         // Alias of the key in the keystore
-            keyPassword 'android'   // Password for the key
+            keyPassword '12345678'   // Password for the key
             storeFile file("./signature/nightly.keystore")  // Keystore file path
-            storePassword 'android'  // Keystore password
+            storePassword '12345678'  // Keystore password
         }
     }    
 
