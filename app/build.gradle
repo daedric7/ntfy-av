@@ -27,6 +27,7 @@ android {
         }
     }
     
+	/*
     signingConfigs {
         register("nightly") {
             keyAlias = System.getenv("ELEMENT_ANDROID_NIGHTLY_KEYID")
@@ -37,7 +38,8 @@ android {
             storePassword = System.getenv("ELEMENT_ANDROID_NIGHTLY_STOREPASSWORD")
                 ?: project.property("signing.element.nightly.storePassword") as? String?
         }
-    }        
+    }
+    */	
 
     buildTypes {
         release {
