@@ -1,13 +1,13 @@
-package net.daedric.ntfy.msg
+package pt.aguiarvieira.ntfy.msg
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import net.daedric.ntfy.db.Action
-import net.daedric.ntfy.db.Attachment
-import net.daedric.ntfy.db.Icon
-import net.daedric.ntfy.db.Notification
-import net.daedric.ntfy.util.joinTags
-import net.daedric.ntfy.util.toPriority
+import pt.aguiarvieira.ntfy.db.Action
+import pt.aguiarvieira.ntfy.db.Attachment
+import pt.aguiarvieira.ntfy.db.Icon
+import pt.aguiarvieira.ntfy.db.Notification
+import pt.aguiarvieira.ntfy.util.joinTags
+import pt.aguiarvieira.ntfy.util.toPriority
 import java.lang.reflect.Type
 
 class NotificationParser {

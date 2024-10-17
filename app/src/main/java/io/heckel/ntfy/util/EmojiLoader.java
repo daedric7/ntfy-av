@@ -1,4 +1,4 @@
-package net.daedric.ntfy.util;
+package pt.aguiarvieira.ntfy.util;
 
 import org.json.JSONArray;
 import org.json.JSONException;

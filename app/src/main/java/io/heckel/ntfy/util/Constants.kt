@@ -1,4 +1,4 @@
-package net.daedric.ntfy.util
+package pt.aguiarvieira.ntfy.util
 
 const val ANDROID_APP_MIME_TYPE = "application/vnd.android.package-archive"
 

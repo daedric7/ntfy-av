@@ -1,12 +1,12 @@
-package net.daedric.ntfy.util
+package pt.aguiarvieira.ntfy.util
 
 import android.content.Context
 import android.os.Build
-import net.daedric.ntfy.BuildConfig
-import net.daedric.ntfy.backup.Backuper
-import net.daedric.ntfy.db.Database
-import net.daedric.ntfy.db.LogDao
-import net.daedric.ntfy.db.LogEntry
+import pt.aguiarvieira.ntfy.BuildConfig
+import pt.aguiarvieira.ntfy.backup.Backuper
+import pt.aguiarvieira.ntfy.db.Database
+import pt.aguiarvieira.ntfy.db.LogDao
+import pt.aguiarvieira.ntfy.db.LogEntry
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

@@ -1,11 +1,11 @@
-package net.daedric.ntfy.service
+package pt.aguiarvieira.ntfy.service
 
 import android.content.Context
 import android.content.Intent
 import androidx.core.content.ContextCompat
 import androidx.work.*
-import net.daedric.ntfy.app.Application
-import net.daedric.ntfy.util.Log
+import pt.aguiarvieira.ntfy.app.Application
+import pt.aguiarvieira.ntfy.util.Log
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

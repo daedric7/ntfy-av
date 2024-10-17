@@ -1,15 +1,15 @@
-package net.daedric.ntfy.msg
+package pt.aguiarvieira.ntfy.msg
 
 import android.content.Context
 import android.net.Uri
 import androidx.core.content.FileProvider
 import androidx.work.Worker
 import androidx.work.WorkerParameters
-import net.daedric.ntfy.BuildConfig
-import net.daedric.ntfy.app.Application
-import net.daedric.ntfy.db.*
-import net.daedric.ntfy.util.Log
-import net.daedric.ntfy.util.sha256
+import pt.aguiarvieira.ntfy.BuildConfig
+import pt.aguiarvieira.ntfy.app.Application
+import pt.aguiarvieira.ntfy.db.*
+import pt.aguiarvieira.ntfy.util.Log
+import pt.aguiarvieira.ntfy.util.sha256
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.Response

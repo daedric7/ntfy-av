@@ -1,4 +1,4 @@
-package net.daedric.ntfy.ui
+package pt.aguiarvieira.ntfy.ui
 
 import android.Manifest
 import android.app.Activity
@@ -25,14 +25,14 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
 import com.stfalcon.imageviewer.StfalconImageViewer
-import net.daedric.ntfy.R
-import net.daedric.ntfy.db.*
-import net.daedric.ntfy.msg.DownloadAttachmentWorker
-import net.daedric.ntfy.msg.DownloadManager
-import net.daedric.ntfy.msg.DownloadType
-import net.daedric.ntfy.msg.NotificationService
-import net.daedric.ntfy.msg.NotificationService.Companion.ACTION_VIEW
-import net.daedric.ntfy.util.*
+import pt.aguiarvieira.ntfy.R
+import pt.aguiarvieira.ntfy.db.*
+import pt.aguiarvieira.ntfy.msg.DownloadAttachmentWorker
+import pt.aguiarvieira.ntfy.msg.DownloadManager
+import pt.aguiarvieira.ntfy.msg.DownloadType
+import pt.aguiarvieira.ntfy.msg.NotificationService
+import pt.aguiarvieira.ntfy.msg.NotificationService.Companion.ACTION_VIEW
+import pt.aguiarvieira.ntfy.util.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

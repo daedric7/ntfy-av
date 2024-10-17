@@ -1,4 +1,4 @@
-package net.daedric.ntfy.db
+package pt.aguiarvieira.ntfy.db
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -7,8 +7,8 @@ import android.os.Build
 import androidx.annotation.WorkerThread
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.*
-import net.daedric.ntfy.util.Log
-import net.daedric.ntfy.util.validUrl
+import pt.aguiarvieira.ntfy.util.Log
+import pt.aguiarvieira.ntfy.util.validUrl
 import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.atomic.AtomicLong
 

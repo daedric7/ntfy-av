@@ -1,11 +1,11 @@
-package net.daedric.ntfy.ui
+package pt.aguiarvieira.ntfy.ui
 
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import com.google.android.material.textfield.TextInputLayout
-import net.daedric.ntfy.R
+import pt.aguiarvieira.ntfy.R
 
 fun initBaseUrlDropdown(baseUrls: List<String>, textView: AutoCompleteTextView, layout: TextInputLayout) {
     // Base URL dropdown behavior; Oh my, why is this so complicated?!

@@ -1,4 +1,4 @@
-package net.daedric.ntfy.util;
+package pt.aguiarvieira.ntfy.util;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Collections;

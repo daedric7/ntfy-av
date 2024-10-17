@@ -1,11 +1,11 @@
-package net.daedric.ntfy.msg
+package pt.aguiarvieira.ntfy.msg
 
 import android.content.Context
 import androidx.work.ExistingWorkPolicy
 import androidx.work.OneTimeWorkRequest
 import androidx.work.WorkManager
 import androidx.work.workDataOf
-import net.daedric.ntfy.util.Log
+import pt.aguiarvieira.ntfy.util.Log
 
 /**
  * Trigger user actions clicked from notification popups.
@@ -15,7 +15,7 @@ import net.daedric.ntfy.util.Log
  */
 object UserActionManager {
     private const val TAG = "NtfyUserActionEx"
-    private const val WORK_NAME_PREFIX = "net.daedric.ntfy.USER_ACTION_"
+    private const val WORK_NAME_PREFIX = "pt.aguiarvieira.ntfy.USER_ACTION_"
 
     fun enqueue(context: Context, notificationId: String, actionId: String) {
         val workManager = WorkManager.getInstance(context)

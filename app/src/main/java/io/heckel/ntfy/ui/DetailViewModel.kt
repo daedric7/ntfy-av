@@ -1,11 +1,11 @@
-package net.daedric.ntfy.ui
+package pt.aguiarvieira.ntfy.ui
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
-import net.daedric.ntfy.db.Notification
-import net.daedric.ntfy.db.Repository
+import pt.aguiarvieira.ntfy.db.Notification
+import pt.aguiarvieira.ntfy.db.Repository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

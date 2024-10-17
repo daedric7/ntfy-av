@@ -1,5 +1,5 @@
 # ntfy Android App
-This is the Android app for [ntfy](https://github.com/binwiederhier/ntfy) ([ntfy.sh](https://ntfy.sh)). You can find the app in [F-Droid](https://f-droid.org/packages/net.daedric.ntfy/) or the [Play Store](https://play.google.com/store/apps/details?id=net.daedric.ntfy), 
+This is the Android app for [ntfy](https://github.com/binwiederhier/ntfy) ([ntfy.sh](https://ntfy.sh)). You can find the app in [F-Droid](https://f-droid.org/packages/pt.aguiarvieira.ntfy/) or the [Play Store](https://play.google.com/store/apps/details?id=pt.aguiarvieira.ntfy), 
 or as .apk files on the [releases page](https://github.com/binwiederhier/ntfy-android/releases).
 
 ## Build

@@ -1,4 +1,4 @@
-package net.daedric.ntfy.firebase
+package pt.aguiarvieira.ntfy.firebase
 
 import android.app.Service
 import android.content.Intent

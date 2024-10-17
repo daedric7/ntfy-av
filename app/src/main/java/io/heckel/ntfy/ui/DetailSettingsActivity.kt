@@ -1,4 +1,4 @@
-package net.daedric.ntfy.ui
+package pt.aguiarvieira.ntfy.ui
 
 import android.content.ContentResolver
 import android.content.ClipData
@@ -18,14 +18,14 @@ import androidx.core.graphics.drawable.toDrawable
 import androidx.lifecycle.lifecycleScope
 import androidx.preference.*
 import androidx.preference.Preference.OnPreferenceClickListener
-import net.daedric.ntfy.BuildConfig
-import net.daedric.ntfy.R
-import net.daedric.ntfy.db.Repository
-import net.daedric.ntfy.db.Subscription
-import net.daedric.ntfy.msg.DownloadAttachmentWorker
-import net.daedric.ntfy.msg.NotificationService
-import net.daedric.ntfy.service.SubscriberServiceManager
-import net.daedric.ntfy.util.*
+import pt.aguiarvieira.ntfy.BuildConfig
+import pt.aguiarvieira.ntfy.R
+import pt.aguiarvieira.ntfy.db.Repository
+import pt.aguiarvieira.ntfy.db.Subscription
+import pt.aguiarvieira.ntfy.msg.DownloadAttachmentWorker
+import pt.aguiarvieira.ntfy.msg.NotificationService
+import pt.aguiarvieira.ntfy.service.SubscriberServiceManager
+import pt.aguiarvieira.ntfy.util.*
 import kotlinx.coroutines.*
 import java.io.File
 import java.io.IOException

@@ -1,4 +1,4 @@
-package net.daedric.ntfy.db
+package pt.aguiarvieira.ntfy.db
 
 import android.content.Context
 import androidx.room.*

@@ -1,13 +1,13 @@
-package net.daedric.ntfy.up
+package pt.aguiarvieira.ntfy.up
 
 import android.content.Context
 import android.content.Intent
-import net.daedric.ntfy.R
-import net.daedric.ntfy.app.Application
-import net.daedric.ntfy.db.Repository
-import net.daedric.ntfy.db.Subscription
-import net.daedric.ntfy.service.SubscriberServiceManager
-import net.daedric.ntfy.util.*
+import pt.aguiarvieira.ntfy.R
+import pt.aguiarvieira.ntfy.app.Application
+import pt.aguiarvieira.ntfy.db.Repository
+import pt.aguiarvieira.ntfy.db.Subscription
+import pt.aguiarvieira.ntfy.service.SubscriberServiceManager
+import pt.aguiarvieira.ntfy.util.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

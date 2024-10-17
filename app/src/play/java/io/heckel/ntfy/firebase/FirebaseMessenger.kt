@@ -1,7 +1,7 @@
-package net.daedric.ntfy.firebase
+package pt.aguiarvieira.ntfy.firebase
 
 import com.google.firebase.messaging.FirebaseMessaging
-import net.daedric.ntfy.util.Log
+import pt.aguiarvieira.ntfy.util.Log
 
 class FirebaseMessenger {
     fun subscribe(topic: String) {

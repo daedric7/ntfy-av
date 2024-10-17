@@ -1,9 +1,9 @@
-package net.daedric.ntfy.ui
+package pt.aguiarvieira.ntfy.ui
 
 import android.content.Context
 import androidx.core.content.ContextCompat
-import net.daedric.ntfy.R
-import net.daedric.ntfy.util.isDarkThemeOn
+import pt.aguiarvieira.ntfy.R
+import pt.aguiarvieira.ntfy.util.isDarkThemeOn
 
 class Colors {
     companion object {

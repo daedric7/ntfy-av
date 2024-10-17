@@ -1,11 +1,11 @@
-package net.daedric.ntfy.msg
+package pt.aguiarvieira.ntfy.msg
 
 import android.content.Context
 import androidx.work.ExistingWorkPolicy
 import androidx.work.OneTimeWorkRequest
 import androidx.work.WorkManager
 import androidx.work.workDataOf
-import net.daedric.ntfy.util.Log
+import pt.aguiarvieira.ntfy.util.Log
 
 /**
  * Download attachment in the background via WorkManager
@@ -15,9 +15,9 @@ import net.daedric.ntfy.util.Log
  */
 object DownloadManager {
     private const val TAG = "NtfyDownloadManager"
-    private const val DOWNLOAD_WORK_ATTACHMENT_NAME_PREFIX = "net.daedric.ntfy.DOWNLOAD_FILE_"
-    private const val DOWNLOAD_WORK_ICON_NAME_PREFIX = "net.daedric.ntfy.DOWNLOAD_ICON_"
-    private const val DOWNLOAD_WORK_BOTH_NAME_PREFIX = "net.daedric.ntfy.DOWNLOAD_BOTH_"
+    private const val DOWNLOAD_WORK_ATTACHMENT_NAME_PREFIX = "pt.aguiarvieira.ntfy.DOWNLOAD_FILE_"
+    private const val DOWNLOAD_WORK_ICON_NAME_PREFIX = "pt.aguiarvieira.ntfy.DOWNLOAD_ICON_"
+    private const val DOWNLOAD_WORK_BOTH_NAME_PREFIX = "pt.aguiarvieira.ntfy.DOWNLOAD_BOTH_"
 
     fun enqueue(context: Context, notificationId: String, userAction: Boolean, type: DownloadType) {
         when (type) {

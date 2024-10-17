@@ -1,8 +1,8 @@
-package net.daedric.ntfy.app
+package pt.aguiarvieira.ntfy.app
 
 import android.app.Application
-import net.daedric.ntfy.db.Repository
-import net.daedric.ntfy.util.Log
+import pt.aguiarvieira.ntfy.db.Repository
+import pt.aguiarvieira.ntfy.util.Log
 
 class Application : Application() {
     val repository by lazy {

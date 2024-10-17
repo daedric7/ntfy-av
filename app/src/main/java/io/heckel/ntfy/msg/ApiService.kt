@@ -1,10 +1,10 @@
-package net.daedric.ntfy.msg
+package pt.aguiarvieira.ntfy.msg
 
 import android.os.Build
-import net.daedric.ntfy.BuildConfig
-import net.daedric.ntfy.db.Notification
-import net.daedric.ntfy.db.User
-import net.daedric.ntfy.util.*
+import pt.aguiarvieira.ntfy.BuildConfig
+import pt.aguiarvieira.ntfy.db.Notification
+import pt.aguiarvieira.ntfy.db.User
+import pt.aguiarvieira.ntfy.util.*
 import okhttp3.*
 import okhttp3.RequestBody.Companion.toRequestBody
 import java.io.IOException

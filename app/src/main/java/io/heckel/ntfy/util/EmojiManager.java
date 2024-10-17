@@ -1,4 +1,4 @@
-package net.daedric.ntfy.util;
+package pt.aguiarvieira.ntfy.util;
 
 import java.io.InputStream;
 import java.util.HashMap;

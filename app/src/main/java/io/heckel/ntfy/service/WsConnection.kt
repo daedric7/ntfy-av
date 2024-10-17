@@ -1,15 +1,15 @@
-package net.daedric.ntfy.service
+package pt.aguiarvieira.ntfy.service
 
 import android.app.AlarmManager
 import android.os.Build
 import android.os.Handler
 import android.os.Looper
-import net.daedric.ntfy.db.*
-import net.daedric.ntfy.msg.ApiService.Companion.requestBuilder
-import net.daedric.ntfy.msg.NotificationParser
-import net.daedric.ntfy.util.Log
-import net.daedric.ntfy.util.topicShortUrl
-import net.daedric.ntfy.util.topicUrlWs
+import pt.aguiarvieira.ntfy.db.*
+import pt.aguiarvieira.ntfy.msg.ApiService.Companion.requestBuilder
+import pt.aguiarvieira.ntfy.msg.NotificationParser
+import pt.aguiarvieira.ntfy.util.Log
+import pt.aguiarvieira.ntfy.util.topicShortUrl
+import pt.aguiarvieira.ntfy.util.topicUrlWs
 import okhttp3.OkHttpClient
 import okhttp3.Response
 import okhttp3.WebSocket

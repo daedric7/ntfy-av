@@ -1,4 +1,4 @@
-package net.daedric.ntfy.firebase
+package pt.aguiarvieira.ntfy.firebase
 
 @Suppress("UNUSED_PARAMETER")
 class FirebaseMessenger {

@@ -1,4 +1,4 @@
-package net.daedric.ntfy.ui
+package pt.aguiarvieira.ntfy.ui
 
 import android.content.Context
 import android.graphics.Color
@@ -10,13 +10,13 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import net.daedric.ntfy.BuildConfig
-import net.daedric.ntfy.R
-import net.daedric.ntfy.db.ConnectionState
-import net.daedric.ntfy.db.Repository
-import net.daedric.ntfy.db.Subscription
-import net.daedric.ntfy.util.displayName
-import net.daedric.ntfy.util.readBitmapFromUriOrNull
+import pt.aguiarvieira.ntfy.BuildConfig
+import pt.aguiarvieira.ntfy.R
+import pt.aguiarvieira.ntfy.db.ConnectionState
+import pt.aguiarvieira.ntfy.db.Repository
+import pt.aguiarvieira.ntfy.db.Subscription
+import pt.aguiarvieira.ntfy.util.displayName
+import pt.aguiarvieira.ntfy.util.readBitmapFromUriOrNull
 import java.text.DateFormat
 import java.util.*
 

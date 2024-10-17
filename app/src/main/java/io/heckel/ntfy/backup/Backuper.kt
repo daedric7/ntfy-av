@@ -1,17 +1,17 @@
-package net.daedric.ntfy.backup
+package pt.aguiarvieira.ntfy.backup
 
 import android.content.Context
 import android.net.Uri
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.stream.JsonReader
-import net.daedric.ntfy.R
-import net.daedric.ntfy.app.Application
-import net.daedric.ntfy.db.Repository
-import net.daedric.ntfy.firebase.FirebaseMessenger
-import net.daedric.ntfy.msg.NotificationService
-import net.daedric.ntfy.util.Log
-import net.daedric.ntfy.util.topicUrl
+import pt.aguiarvieira.ntfy.R
+import pt.aguiarvieira.ntfy.app.Application
+import pt.aguiarvieira.ntfy.db.Repository
+import pt.aguiarvieira.ntfy.firebase.FirebaseMessenger
+import pt.aguiarvieira.ntfy.msg.NotificationService
+import pt.aguiarvieira.ntfy.util.Log
+import pt.aguiarvieira.ntfy.util.topicUrl
 import java.io.InputStreamReader
 
 class Backuper(val context: Context) {
@@ -96,7 +96,7 @@ class Backuper(val context: Context) {
         subscriptions.forEach { s ->
             try {
                 // Add to database
-                val subscription = net.daedric.ntfy.db.Subscription(
+                val subscription = pt.aguiarvieira.ntfy.db.Subscription(
                     id = s.id,
                     baseUrl = s.baseUrl,
                     topic = s.topic,
@@ -138,7 +138,7 @@ class Backuper(val context: Context) {
             try {
                 val actions = if (n.actions != null) {
                     n.actions.map { a ->
-                        net.daedric.ntfy.db.Action(
+                        pt.aguiarvieira.ntfy.db.Action(
                             id = a.id,
                             action = a.action,
                             label = a.label,
@@ -157,7 +157,7 @@ class Backuper(val context: Context) {
                     null
                 }
                 val attachment = if (n.attachment != null) {
-                    net.daedric.ntfy.db.Attachment(
+                    pt.aguiarvieira.ntfy.db.Attachment(
                         name = n.attachment.name,
                         type = n.attachment.type,
                         size = n.attachment.size,
@@ -170,14 +170,14 @@ class Backuper(val context: Context) {
                     null
                 }
                 val icon = if (n.icon != null) {
-                    net.daedric.ntfy.db.Icon(
+                    pt.aguiarvieira.ntfy.db.Icon(
                         url = n.icon.url,
                         contentUri = n.icon.contentUri,
                     )
                 } else {
                     null
                 }
-                repository.addNotification(net.daedric.ntfy.db.Notification(
+                repository.addNotification(pt.aguiarvieira.ntfy.db.Notification(
                     id = n.id,
                     subscriptionId = n.subscriptionId,
                     timestamp = n.timestamp,
@@ -205,7 +205,7 @@ class Backuper(val context: Context) {
         }
         users.forEach { u ->
             try {
-                repository.addUser(net.daedric.ntfy.db.User(
+                repository.addUser(pt.aguiarvieira.ntfy.db.User(
                     baseUrl = u.baseUrl,
                     username = u.username,
                     password = u.password

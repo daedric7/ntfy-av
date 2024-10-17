@@ -1,4 +1,4 @@
-package net.daedric.ntfy.service
+package pt.aguiarvieira.ntfy.service
 
 interface Connection {
     fun start()

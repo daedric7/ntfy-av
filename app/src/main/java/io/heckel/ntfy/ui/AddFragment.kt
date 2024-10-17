@@ -1,4 +1,4 @@
-package net.daedric.ntfy.ui
+package pt.aguiarvieira.ntfy.ui
 
 import android.app.Activity
 import android.app.AlertDialog
@@ -13,12 +13,12 @@ import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
-import net.daedric.ntfy.BuildConfig
-import net.daedric.ntfy.R
-import net.daedric.ntfy.db.Repository
-import net.daedric.ntfy.db.User
-import net.daedric.ntfy.msg.ApiService
-import net.daedric.ntfy.util.*
+import pt.aguiarvieira.ntfy.BuildConfig
+import pt.aguiarvieira.ntfy.R
+import pt.aguiarvieira.ntfy.db.Repository
+import pt.aguiarvieira.ntfy.db.User
+import pt.aguiarvieira.ntfy.msg.ApiService
+import pt.aguiarvieira.ntfy.util.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

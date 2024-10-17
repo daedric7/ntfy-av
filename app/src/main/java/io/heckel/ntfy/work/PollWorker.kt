@@ -1,13 +1,13 @@
-package net.daedric.ntfy.work
+package pt.aguiarvieira.ntfy.work
 
 import android.content.Context
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import net.daedric.ntfy.BuildConfig
-import net.daedric.ntfy.db.Repository
-import net.daedric.ntfy.msg.ApiService
-import net.daedric.ntfy.msg.NotificationDispatcher
-import net.daedric.ntfy.util.Log
+import pt.aguiarvieira.ntfy.BuildConfig
+import pt.aguiarvieira.ntfy.db.Repository
+import pt.aguiarvieira.ntfy.msg.ApiService
+import pt.aguiarvieira.ntfy.msg.NotificationDispatcher
+import pt.aguiarvieira.ntfy.util.Log
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlin.random.Random

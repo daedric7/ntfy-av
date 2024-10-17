@@ -1,14 +1,14 @@
-package net.daedric.ntfy.msg
+package pt.aguiarvieira.ntfy.msg
 
 import android.content.Context
 import androidx.work.Worker
 import androidx.work.WorkerParameters
-import net.daedric.ntfy.R
-import net.daedric.ntfy.app.Application
-import net.daedric.ntfy.db.*
-import net.daedric.ntfy.msg.NotificationService.Companion.ACTION_BROADCAST
-import net.daedric.ntfy.msg.NotificationService.Companion.ACTION_HTTP
-import net.daedric.ntfy.util.Log
+import pt.aguiarvieira.ntfy.R
+import pt.aguiarvieira.ntfy.app.Application
+import pt.aguiarvieira.ntfy.db.*
+import pt.aguiarvieira.ntfy.msg.NotificationService.Companion.ACTION_BROADCAST
+import pt.aguiarvieira.ntfy.msg.NotificationService.Companion.ACTION_HTTP
+import pt.aguiarvieira.ntfy.util.Log
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.RequestBody.Companion.toRequestBody

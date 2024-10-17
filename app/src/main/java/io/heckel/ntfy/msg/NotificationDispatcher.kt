@@ -1,13 +1,13 @@
-package net.daedric.ntfy.msg
+package pt.aguiarvieira.ntfy.msg
 
 import android.content.Context
-import net.daedric.ntfy.db.Notification
-import net.daedric.ntfy.db.Repository
-import net.daedric.ntfy.db.Subscription
-import net.daedric.ntfy.util.Log
-import net.daedric.ntfy.up.Distributor
-import net.daedric.ntfy.util.decodeBytesMessage
-import net.daedric.ntfy.util.safeLet
+import pt.aguiarvieira.ntfy.db.Notification
+import pt.aguiarvieira.ntfy.db.Repository
+import pt.aguiarvieira.ntfy.db.Subscription
+import pt.aguiarvieira.ntfy.util.Log
+import pt.aguiarvieira.ntfy.up.Distributor
+import pt.aguiarvieira.ntfy.util.decodeBytesMessage
+import pt.aguiarvieira.ntfy.util.safeLet
 
 /**
  * The notification dispatcher figures out what to do with a notification.

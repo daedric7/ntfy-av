@@ -1,4 +1,4 @@
-package net.daedric.ntfy.up
+package pt.aguiarvieira.ntfy.up
 
 /**
  * Constants as defined on the specs

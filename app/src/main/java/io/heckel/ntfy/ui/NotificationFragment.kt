@@ -1,4 +1,4 @@
-package net.daedric.ntfy.ui
+package pt.aguiarvieira.ntfy.ui
 
 import android.app.AlertDialog
 import android.app.Dialog
@@ -7,8 +7,8 @@ import android.os.Bundle
 import android.widget.RadioButton
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.lifecycleScope
-import net.daedric.ntfy.R
-import net.daedric.ntfy.db.Repository
+import pt.aguiarvieira.ntfy.R
+import pt.aguiarvieira.ntfy.db.Repository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

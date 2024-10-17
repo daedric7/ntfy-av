@@ -1,4 +1,4 @@
-package net.daedric.ntfy.ui
+package pt.aguiarvieira.ntfy.ui
 
 import android.app.AlertDialog
 import android.content.ClipData
@@ -24,18 +24,18 @@ import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.android.material.snackbar.Snackbar
-import net.daedric.ntfy.BuildConfig
-import net.daedric.ntfy.R
-import net.daedric.ntfy.app.Application
-import net.daedric.ntfy.db.Notification
-import net.daedric.ntfy.db.Repository
-import net.daedric.ntfy.db.Subscription
-import net.daedric.ntfy.firebase.FirebaseMessenger
-import net.daedric.ntfy.util.Log
-import net.daedric.ntfy.msg.ApiService
-import net.daedric.ntfy.msg.NotificationService
-import net.daedric.ntfy.service.SubscriberServiceManager
-import net.daedric.ntfy.util.*
+import pt.aguiarvieira.ntfy.BuildConfig
+import pt.aguiarvieira.ntfy.R
+import pt.aguiarvieira.ntfy.app.Application
+import pt.aguiarvieira.ntfy.db.Notification
+import pt.aguiarvieira.ntfy.db.Repository
+import pt.aguiarvieira.ntfy.db.Subscription
+import pt.aguiarvieira.ntfy.firebase.FirebaseMessenger
+import pt.aguiarvieira.ntfy.util.Log
+import pt.aguiarvieira.ntfy.msg.ApiService
+import pt.aguiarvieira.ntfy.msg.NotificationService
+import pt.aguiarvieira.ntfy.service.SubscriberServiceManager
+import pt.aguiarvieira.ntfy.util.*
 import kotlinx.coroutines.*
 import java.util.*
 import kotlin.random.Random

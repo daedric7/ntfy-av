@@ -1,4 +1,4 @@
-package net.daedric.ntfy.ui
+package pt.aguiarvieira.ntfy.ui
 
 import android.content.Context
 import android.net.Uri
@@ -6,8 +6,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
-import net.daedric.ntfy.db.*
-import net.daedric.ntfy.up.Distributor
+import pt.aguiarvieira.ntfy.db.*
+import pt.aguiarvieira.ntfy.up.Distributor
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

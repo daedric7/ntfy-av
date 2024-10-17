@@ -1,9 +1,9 @@
-package net.daedric.ntfy.service
+package pt.aguiarvieira.ntfy.service
 
-import net.daedric.ntfy.db.*
-import net.daedric.ntfy.util.Log
-import net.daedric.ntfy.msg.ApiService
-import net.daedric.ntfy.util.topicUrl
+import pt.aguiarvieira.ntfy.db.*
+import pt.aguiarvieira.ntfy.util.Log
+import pt.aguiarvieira.ntfy.msg.ApiService
+import pt.aguiarvieira.ntfy.util.topicUrl
 import kotlinx.coroutines.*
 import okhttp3.Call
 import java.util.concurrent.atomic.AtomicBoolean

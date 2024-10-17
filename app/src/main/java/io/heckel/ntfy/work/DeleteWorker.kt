@@ -1,17 +1,17 @@
-package net.daedric.ntfy.work
+package pt.aguiarvieira.ntfy.work
 
 import android.content.Context
 import android.net.Uri
 import androidx.core.content.FileProvider
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import net.daedric.ntfy.BuildConfig
-import net.daedric.ntfy.db.ATTACHMENT_PROGRESS_DELETED
-import net.daedric.ntfy.db.Repository
-import net.daedric.ntfy.msg.DownloadIconWorker
-import net.daedric.ntfy.util.Log
-import net.daedric.ntfy.util.maybeFileStat
-import net.daedric.ntfy.util.topicShortUrl
+import pt.aguiarvieira.ntfy.BuildConfig
+import pt.aguiarvieira.ntfy.db.ATTACHMENT_PROGRESS_DELETED
+import pt.aguiarvieira.ntfy.db.Repository
+import pt.aguiarvieira.ntfy.msg.DownloadIconWorker
+import pt.aguiarvieira.ntfy.util.Log
+import pt.aguiarvieira.ntfy.util.maybeFileStat
+import pt.aguiarvieira.ntfy.util.topicShortUrl
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.File

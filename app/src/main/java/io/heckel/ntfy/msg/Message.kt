@@ -1,4 +1,4 @@
-package net.daedric.ntfy.msg
+package pt.aguiarvieira.ntfy.msg
 
 import androidx.annotation.Keep
 

@@ -1,4 +1,4 @@
-package net.daedric.ntfy.msg
+package pt.aguiarvieira.ntfy.msg
 
 import android.app.*
 import android.content.ActivityNotFoundException
@@ -14,13 +14,13 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
-import net.daedric.ntfy.R
-import net.daedric.ntfy.db.*
-import net.daedric.ntfy.db.Notification
-import net.daedric.ntfy.ui.Colors
-import net.daedric.ntfy.ui.DetailActivity
-import net.daedric.ntfy.ui.MainActivity
-import net.daedric.ntfy.util.*
+import pt.aguiarvieira.ntfy.R
+import pt.aguiarvieira.ntfy.db.*
+import pt.aguiarvieira.ntfy.db.Notification
+import pt.aguiarvieira.ntfy.ui.Colors
+import pt.aguiarvieira.ntfy.ui.DetailActivity
+import pt.aguiarvieira.ntfy.ui.MainActivity
+import pt.aguiarvieira.ntfy.util.*
 import java.util.*
 
 class NotificationService(val context: Context) {
@@ -523,9 +523,9 @@ class NotificationService(val context: Context) {
         const val BROADCAST_EXTRA_NOTIFICATION_ID = "notificationId"
         const val BROADCAST_EXTRA_ACTION_ID = "actionId"
 
-        const val BROADCAST_TYPE_DOWNLOAD_START = "net.daedric.ntfy.DOWNLOAD_ACTION_START"
-        const val BROADCAST_TYPE_DOWNLOAD_CANCEL = "net.daedric.ntfy.DOWNLOAD_ACTION_CANCEL"
-        const val BROADCAST_TYPE_USER_ACTION = "net.daedric.ntfy.USER_ACTION_RUN"
+        const val BROADCAST_TYPE_DOWNLOAD_START = "pt.aguiarvieira.ntfy.DOWNLOAD_ACTION_START"
+        const val BROADCAST_TYPE_DOWNLOAD_CANCEL = "pt.aguiarvieira.ntfy.DOWNLOAD_ACTION_CANCEL"
+        const val BROADCAST_TYPE_USER_ACTION = "pt.aguiarvieira.ntfy.USER_ACTION_RUN"
 
         private const val TAG = "NtfyNotifService"
 

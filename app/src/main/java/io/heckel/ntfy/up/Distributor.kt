@@ -1,8 +1,8 @@
-package net.daedric.ntfy.up
+package pt.aguiarvieira.ntfy.up
 
 import android.content.Context
 import android.content.Intent
-import net.daedric.ntfy.util.Log
+import pt.aguiarvieira.ntfy.util.Log
 
 /**
  * This is the UnifiedPush distributor, an amalgamation of messages to be sent as part of the spec.
