@@ -31,12 +31,6 @@ jobs:
       - name: Configure gradle
         uses: gradle/actions/setup-gradle@v3
       - name: Create app bundle
-        env:
-          ELEMENT_ANDROID_MAPTILER_API_KEY: 'y2pJp6r8fSjQHnFpYNKH'
-          ELEMENT_ANDROID_MAPTILER_LIGHT_MAP_ID: 'streets-v2'
-          ELEMENT_ANDROID_MAPTILER_DARK_MAP_ID: 'streets-v2-dark'
-          ELEMENT_ANDROID_NIGHTLY_KEYPASSWORD: '12345678'
-          ELEMENT_ANDROID_NIGHTLY_STOREPASSWORD: '12345678'
         run: ./gradlew assembleRelease $CI_GRADLE_ARG_PROPERTIES
       - name: Upload bundle as artifact
         uses: actions/upload-artifact@v4
@@ -45,21 +39,21 @@ jobs:
           path: |
             app/build/outputs/*
 
-#      - name: Send to Matrix
-#        uses: daedric7/Matrix-Send-File@v0.2-beta6
-#        with:
-#          room_id: ${{ secrets.MATRIX_ROOM_ID }}
-#          access_token: ${{ secrets.MATRIX_ACCESS_TOKEN }}
-#          server: "https://aguiarvieira.pt"
-#          file: app/build/outputs/apk/gplay/nightly/app-gplay-arm64-v8a-nightly.apk
-#          message: "Build Complete"
+      - name: Send to Matrix
+        uses: daedric7/Matrix-Send-File@v0.2-beta6
+        with:
+          room_id: ${{ secrets.MATRIX_ROOM_ID }}
+          access_token: ${{ secrets.MATRIX_ACCESS_TOKEN }}
+          server: "https://aguiarvieira.pt"
+          file: app/build/outputs/apk/gplay/nightly/app-gplay-arm64-v8a-nightly.apk
+          message: "Build Complete"
 
-#      - name: Deploy Nightly
-#        uses: WebFreak001/deploy-nightly@v3.1.0
-#        with:
-#          upload_url: https://uploads.github.com/repos/daedric7/element-x-daedricnet/releases/164077249/assets{?name,label} # find out this value by opening https://api.github.com/repos/<owner>/<repo>/releases in your browser and copy the full "upload_url" value including the {?name,label} part
-#          release_id: 164077249 # same as above (id can just be taken out the upload_url, it's used to find old releases)
-#          asset_path: app/build/outputs/apk/gplay/nightly/app-gplay-arm64-v8a-nightly.apk # path to archive to upload
-#          asset_name: daedricnet-element-x-$$.apk # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
-#          asset_content_type: application/vnd.android.package-archive # required by GitHub API
-#          max_releases: 1 # optional, if there are more releases than this matching the asset_name, the oldest ones are going to be deleted
+      - name: Deploy Nightly
+        uses: WebFreak001/deploy-nightly@v3.1.0
+        with:
+          upload_url: https://uploads.github.com/repos/daedric7/ntfy-av/releases/180413350/assets{?name,label} # find out this value by opening https://api.github.com/repos/<owner>/<repo>/releases in your browser and copy the full "upload_url" value including the {?name,label} part
+          release_id: 180413350 # same as above (id can just be taken out the upload_url, it's used to find old releases)
+          asset_path: app/build/outputs/apk/play/release/*.apk # path to archive to upload
+          asset_name: ntfy-av-$$.apk # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
+          asset_content_type: application/vnd.android.package-archive # required by GitHub API
+          max_releases: 1 # optional, if there are more releases than this matching the asset_name, the oldest ones are going to be deleted
