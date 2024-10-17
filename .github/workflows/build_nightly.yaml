@@ -1,4 +1,4 @@
-name: Create and Release DaedricNET Ntfy
+name: Create and Release Ntfy
 on:
   # This can be used to automatically publish nightlies at UTC nighttime
   schedule:
@@ -41,7 +41,7 @@ jobs:
       - name: Upload bundle as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ntfy-daedric-net
+          name: ntfy-build
           path: |
             app/build/outputs/*
 
