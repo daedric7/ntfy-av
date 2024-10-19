@@ -47,7 +47,7 @@ jobs:
           access_token: ${{ secrets.MATRIX_ACCESS_TOKEN }}
           server: "https://aguiarvieira.pt"
           file: app/build/outputs/apk/play/release/app-play-release.apk
-          message: "Build Complete"
+          message: "NTFY AV Build Complete"
 
       - name: Deploy Nightly
         uses: WebFreak001/deploy-nightly@v3.2.0
