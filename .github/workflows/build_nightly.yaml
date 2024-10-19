@@ -21,6 +21,7 @@ jobs:
       group: ${{ format('build-release-main-gplay-{0}', github.sha) }}
       cancel-in-progress: true    
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - uses: actions/checkout@v4
       - name: Use JDK 17
