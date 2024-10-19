@@ -37,7 +37,7 @@ jobs:
         with:
           name: ntfy-build-av
           path: |
-            app/build/outputs/*
+            app/build/outputs/apk/play/release/app-play-release.apk
 
       - name: Send to Matrix
         uses: daedric7/Matrix-Send-File@v0.2-beta6
